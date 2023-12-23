@@ -16,7 +16,7 @@ Generate a music card like normal:
 
 ```js
 (async () => {
-    const { musicCard } = require("musicard");
+    const { musicCard } = require("musicard-bun");
     const fs = require("fs");
 
     const card = new musicCard()
@@ -58,7 +58,36 @@ This is the **classic** output of musicard.
 This is the **dynamic** output of musicard.
 ![dynamic](https://s6.imgcdn.dev/ZD6Jy.png)
 
+ # Rank Card
+ Generate a rank card like this:
+ ```js
+ (async () => {
+    const { RankCard } = require("musicard-bun");
+    const fs = require("fs");
 
+    const card = new RankCard()
+        .setName("Ayush")
+        .setLevel("Level 22")
+        .setColor("auto")
+        .setBrightness(100)
+        .setAvatar("https://static.qobuz.com/images/covers/ga/ua/rmk2cpqliuaga_600.jpg")
+        .setProgress(38)
+        .setRank("56")
+        .setCurrentXp("589")
+        .setRequiredXp("100000")
+        .setShowXp(true);
+     
+
+    const cardBuffer = await card.build();
+
+    fs.writeFileSync(`RankCard.png`, cardBuffer);
+    console.log("Done!");
+})()
+ ```
+ Preview: 
+ 
+  ![RankCard](https://cdn.discordapp.com/attachments/868795084194320394/1188189685604941835/RankCard.png)
+ 
 ## Credits
 "We don't just copy, we paste with style."
 

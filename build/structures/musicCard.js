@@ -402,7 +402,7 @@ class musicCard {
 
 
         } else {
-            throw new Error('Invalid theme parameter, must be "classic" or "dynamic"');
+            throw new Error('Invalid theme parameter, must be "classic" or "dynamic" or "anime"');
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "name": "musicard-bun",
-  "version": "1.5.13",
+  "version": "1.6.0",
   "description": "Experience your Discord bot's music in a visual format.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -22,7 +22,17 @@
     "node-canvas",
     "canvas-constructor",
     "discord",
-    "discord-canvas"
+    "discord-canvas",
+    "discord-canvas-music-card",
+    "discord-canvas-music",
+    "rankcard",
+    "discord-rankcard",
+    "discord-rank-card",
+    "discord.js-rankcard",
+    "discord.js-rank-card",
+    "level",
+    "level-card",
+    "level-card-discord"
   ],
   "author": "grdAyush",
   "license": "MIT",
