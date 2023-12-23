@@ -58,6 +58,16 @@ This is the **classic** output of musicard.
 This is the **dynamic** output of musicard.
 ![dynamic](https://s6.imgcdn.dev/ZD6Jy.png)
 
-So sugoi! Try out the anime theme today!
 
+## Credits
+"We don't just copy, we paste with style."
+
+Our core philosophy is simple:
+
+Find something popular
+Copy it
+Slap better things on it
+
+
+Original musicard package by [A3PIRE](https://github.com/a3pire/musicard)
 

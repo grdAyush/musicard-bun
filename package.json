@@ -24,7 +24,7 @@
     "discord",
     "discord-canvas"
   ],
-  "author": "aayucodez",
+  "author": "grdAyush",
   "license": "MIT",
   "dependencies": {
     "@napi-rs/canvas": "^0.1.44",
@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/A3PIRE/musicard.git"
+    "url": "https://github.com/grdAyush/musicard-bun/musicard.git"
   },
   "bugs": {
-    "url": "https://github.com/A3PIRE/musicard/issues"
+    "url": "https://github.com/grdAyush/musicard-bun/issues"
   }
 }
