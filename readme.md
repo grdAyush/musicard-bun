@@ -1,4 +1,4 @@
-Here's a humorous README.md building off the original musicard package and adding details about the new anime theme:
+
 
 # musicard-bun 🎵
 
