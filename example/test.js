@@ -3,7 +3,7 @@
     const fs = require("fs");
 
     const card = new musicCard()
-        .setName("Space Theme")
+        .setName("Space Thememkthlmn klg")
         .setAuthor("By og.ayush")
         .setColor("#ffff")
         .setTheme("space+")

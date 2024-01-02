@@ -3,7 +3,7 @@ export declare class musicCard {
     name?: string;
     author?: string;
     color?: string;
-    theme?: "classic" | "dynamic" | "anime";
+    theme?: "classic" | "dynamic" | "anime" | "space" | "space+";
     brightness?: number;
     thumbnail?: string;
     progress?: number;

@@ -84,7 +84,7 @@ This is the **space+** output of musicard.
  ```
  Preview: 
  
-  ![RankCard](https://cdn.discordapp.com/attachments/868795084194320394/1188189685604941835/RankCard.png)
+  ![RankCard](https://cdn.discordapp.com/attachments/1179018507678126111/1191784474061586475/RankCard.png)
  
 ## Credits
 "We don't just copy, we paste with style."

@@ -1,12 +1,12 @@
 const canvas = require("@napi-rs/canvas");
 const { colorFetch } = require("../functions/colorFetch");
 
- canvas.GlobalFonts.registerFromPath(`build/structures/font/circularstd-black.otf`, "circular-std");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-black.ttf`, "noto-sans");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/Space.ttf`, "space");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/circularstd-black.otf`, "circular-std");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-black.ttf`, "noto-sans");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/Space.ttf`, "space");
 
 
 canvas.GlobalFonts.registerFromPath(`node_modules/musicard-bun/build/structures/font/circularstd-black.otf`, "circular-std");
@@ -102,8 +102,8 @@ class musicCard {
             this.thumbnail
         );
 
-        if (this.name.length > 15) this.name = `${this.name.slice(0, 15)}...`;
-        if (this.author.length > 15) this.author = `${this.author.slice(0, 15)}...`;
+        if (this.name.length > 15) this.name = `${this.name.slice(0, 13)}...`;
+        if (this.author.length > 15) this.author = `${this.author.slice(0, 13)}...`;
 
         if (this.theme == 'classic') {
             const progressBarWidth = (validatedProgress / 100) * 670;
@@ -492,11 +492,11 @@ class musicCard {
             ctx.fillStyle = gradient;
             ctx.fillRect(0, 0, 1280, 450);
             ctx.fillStyle = `#${validatedColor}`;
-            ctx.font = `110px space,  noto-emoji,`;
+            ctx.font = `80px space,  noto-emoji,`;
             ctx.fillText(this.name, 490, 200); 
 
             ctx.fillStyle = '#b8b8b8';
-            ctx.font = `55px space, noto-emoji`;
+            ctx.font = `40px space, noto-emoji`;
             ctx.fillText(this.author, 510, 260); 
 
             ctx.fillStyle = '#fff';
@@ -615,11 +615,11 @@ class musicCard {
             ctx.fillStyle = gradient;
             ctx.fillRect(0, 0, 1280, 450);
             ctx.fillStyle = `#${validatedColor}`;
-            ctx.font = `110px space,  noto-emoji,`;
+            ctx.font = `90px space,  noto-emoji,`;
             ctx.fillText(this.name, 450, 200); 
 
             ctx.fillStyle = '#b8b8b8';
-            ctx.font = `55px space, noto-emoji`;
+            ctx.font = `40px space, noto-emoji`;
             ctx.fillText(this.author, 460, 260); 
 
             ctx.fillStyle = '#fff';
