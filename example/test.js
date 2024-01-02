@@ -3,12 +3,12 @@
     const fs = require("fs");
 
     const card = new musicCard()
-        .setName("Bad Habits")
-        .setAuthor("By Ed Sheeran")
-        .setColor("auto")
-        .setTheme("anime")
+        .setName("Space Theme")
+        .setAuthor("By og.ayush")
+        .setColor("#ffff")
+        .setTheme("space+")
         .setBrightness(100)
-        .setThumbnail("https://static.qobuz.com/images/covers/ga/ua/rmk2cpqliuaga_600.jpg")
+        .setThumbnail("https://cdn.discordapp.com/icons/789443193989103648/b4574ae90c16077bbe0b244a95beb71f.webp")
         .setProgress(50)
         .setStartTime("0:00")
         .setEndTime("3:00")

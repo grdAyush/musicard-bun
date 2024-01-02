@@ -14,7 +14,7 @@ export declare class musicCard {
   public setName(name: string): this;
   public setAuthor(author: string): this;
   public setColor(color: string): this;
-  public setTheme(theme: "classic" | "dynamic" | "anime"): this;
+  public setTheme(theme: "classic" | "dynamic" | "anime" | "space" | "space+"): this;
   public setBrightness(brightness: number): this;
   public setThumbnail(thumbnail: string): this;
   public setProgress(progress: number): this;

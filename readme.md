@@ -34,15 +34,7 @@ Generate a music card like normal:
 
     fs.writeFileSync(`musicard.png`, cardBuffer);
     console.log("Done!");
-})()
-```
-
-But now you can enable the ANIME THEME! 💥
-
-```diff
-const card = new musicCard()
-  // ...
-+ .setTheme("anime")
+})();
 ```
 
 The anime theme makes your cards look kawaii with rainbow sparkles and text 🌸✨
@@ -57,6 +49,12 @@ This is the **classic** output of musicard.
 
 This is the **dynamic** output of musicard.
 ![dynamic](https://s6.imgcdn.dev/ZD6Jy.png)
+
+This is the **space** output of musicard.
+![space](https://cdn.discordapp.com/attachments/1191380828056461373/1191694289357520977/musicCard.png)
+
+This is the **space+** output of musicard.
+![space](https://cdn.discordapp.com/attachments/1053921059012878367/1191710902039359488/musicCard.png)
 
  # Rank Card
  Generate a rank card like this:
