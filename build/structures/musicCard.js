@@ -341,7 +341,7 @@ class musicCard {
                     }
                 }
             }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://cdn.discordapp.com/avatars/1051806381461745664/f39828e0fc358084e82fb9582bef1fc1.png`);
+                thumbnailImage = canvas.loadImage(`https://cdn.discordapp.com/avatars/1051806381461745664/f39828e0fc358084e82fb9582bef1fc1.png?size=4096`);
             })
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
@@ -457,7 +457,7 @@ class musicCard {
                     }
                 }
             }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://cdn.discordapp.com/avatars/1051806381461745664/f39828e0fc358084e82fb9582bef1fc1.png`);
+                thumbnailImage = canvas.loadImage(`https://cdn.discordapp.com/avatars/1051806381461745664/f39828e0fc358084e82fb9582bef1fc1.png?size=4096`);
             })
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
