@@ -1,6 +1,6 @@
 {
   "name": "musicard-bun",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Experience your Discord bot's music in a visual format.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
