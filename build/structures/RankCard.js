@@ -2,12 +2,12 @@ const canvas = require("@napi-rs/canvas");
 const { colorFetch } = require("../functions/colorFetch");
 
 
-canvas.GlobalFonts.registerFromPath(`build/structures/font/circularstd-black.otf`, "circular-std");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-black.ttf`, "noto-sans");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
- canvas.GlobalFonts.registerFromPath(`build/structures/font/Chewy-Regular.ttf`, "chewy");
+//canvas.GlobalFonts.registerFromPath(`build/structures/font/circularstd-black.otf`, "circular-std");
+// canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-black.ttf`, "noto-sans");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notoemoji-bold.ttf`, "noto-emoji");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/notosans-kr-black.ttf`, "noto-sans-kr");
+ //canvas.GlobalFonts.registerFromPath(`build/structures/font/Chewy-Regular.ttf`, "chewy");
 
 canvas.GlobalFonts.registerFromPath(`node_modules/musicard-bun/build/structures/font/circularstd-black.otf`, "circular-std");
 canvas.GlobalFonts.registerFromPath(`node_modules/musicard-bun/build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
@@ -119,15 +119,19 @@ class RankCard {
 
             let thumbnailImage;
 
-            thumbnailImage = await canvas.loadImage(this.avatar, {
-                requestOptions: {
-                    headers: {
-                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+          
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
                     }
-                }
-            }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://cdn.discordapp.com/attachments/1163071862146859089/1180532188438077450/00ea394f-6336-45d0-b96c-712fc621ec4d.png`);
-            })
+                });
+            } catch (error) {
+            
+                throw new Error(`Failed to load Thumnail Image\n The Image URl is invalid or the image is not accessible\n${error}`);
+            }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
