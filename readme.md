@@ -10,6 +10,12 @@ npm install musicard-bun
 
 This package is a fun fork of musicard with some radical new features 🌈 for maximum sugoi-ness!
 
+## Support Server
+
+<a href="https://discord.gg/HjnjsdSUWK">
+  <img src="https://cdn.discordapp.com/attachments/974995949996900376/1194876002904571924/Picsart_24-01-11_10-59-02-138.jpg" width="500">
+</a>
+
 ## Usage
 
 Generate a music card like normal:
