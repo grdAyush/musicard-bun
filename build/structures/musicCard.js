@@ -156,15 +156,19 @@ class musicCard {
 
             let thumbnailImage;
 
-            thumbnailImage = await canvas.loadImage(this.thumbnail, {
-                requestOptions: {
-                    headers: {
-                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+           
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
                     }
-                }
-            }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://s6.imgcdn.dev/Opo4a.jpg`);
-            })
+                });
+            } catch (error) {
+            
+                throw new Error(`Failed to load Thumnail Image\n The Image URl is invalid or the image is not accessible\n${error}`);
+            }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -221,15 +225,19 @@ class musicCard {
 
             let thumbnailImage;
 
-            thumbnailImage = await canvas.loadImage(this.thumbnail, {
-                requestOptions: {
-                    headers: {
-                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+            
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
                     }
-                }
-            }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://s6.imgcdn.dev/Opo4a.jpg`);
-            })
+                });
+            } catch (error) {
+            
+                throw new Error(`Failed to load Thumnail Image\n The Image URl is invalid or the image is not accessible\n${error}`);
+            }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -334,16 +342,19 @@ class musicCard {
 
             let thumbnailImage;
 
-            thumbnailImage = await canvas.loadImage(this.thumbnail, {
-                requestOptions: {
-                    headers: {
-                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+           
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
                     }
-                }
-            }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://cdn.discordapp.com/avatars/1051806381461745664/f39828e0fc358084e82fb9582bef1fc1.png?size=4096`);
-            })
-
+                });
+            } catch (error) {
+            
+                throw new Error(`Failed to load Thumnail Image\n The Image URl is invalid or the image is not accessible\n${error}`);
+            }
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
             const thumbnailY = (thumbnailImage.height - thumbnailSize) / 2;
@@ -450,15 +461,19 @@ class musicCard {
 
             let thumbnailImage;
 
-            thumbnailImage = await canvas.loadImage(this.thumbnail, {
-                requestOptions: {
-                    headers: {
-                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+        
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
                     }
-                }
-            }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://cdn.discordapp.com/avatars/1051806381461745664/f39828e0fc358084e82fb9582bef1fc1.png?size=4096`);
-            })
+                });
+            } catch (error) {
+            
+                throw new Error(`Failed to load Thumnail Image\n The Image URl is invalid or the image is not accessible\n${error}`);
+            }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -566,15 +581,18 @@ class musicCard {
 
             let thumbnailImage;
 
-            thumbnailImage = await canvas.loadImage(this.thumbnail, {
-                requestOptions: {
-                    headers: {
-                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+            try {
+                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                    requestOptions: {
+                        headers: {
+                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+                        }
                     }
-                }
-            }).catch(() => {
-                thumbnailImage = canvas.loadImage(`https://s6.imgcdn.dev/Opo4a.jpg`);
-            })
+                });
+            } catch (error) {
+            
+                throw new Error(`Failed to load Thumnail Image\n The Image URl is invalid or the image is not accessible\n${error}`);
+            }
 
             const thumbnailSize = Math.min(thumbnailImage.width, thumbnailImage.height);
             const thumbnailX = (thumbnailImage.width - thumbnailSize) / 2;
@@ -656,7 +674,7 @@ class musicCard {
 
 
         } else {
-            throw new Error('Invalid theme parameter, must be "classic" or "dynamic" or "anime"');
+            throw new Error('Invalid theme parameter, must be  one of "classic""dynamic"  "anime" "space" "space+"');
         }
     }
 }
