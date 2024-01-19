@@ -110,7 +110,7 @@ class RankCard {
             const frame = canvas.createCanvas(1280, 450);
             const ctx = frame.getContext("2d");
 
-                let background = await canvas.loadImage(`https://imgur.com/BHtrrKq`);
+                let background = await canvas.loadImage(`https://i.imgur.com/BHtrrKq.png`);
 
             ctx.drawImage(background, 0, 0, frame.width, frame.height)
 

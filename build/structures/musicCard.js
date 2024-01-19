@@ -149,7 +149,7 @@ class musicCard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://s6.imgcdn.dev/ZDjTD.png`);
+            const background = await canvas.loadImage(`https://i.imgur.com/DZyv3tZ.png`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -217,7 +217,7 @@ class musicCard {
             const frame = canvas.createCanvas(3264, 765);
             const ctx = frame.getContext("2d");
 
-            const background = await canvas.loadImage("https://s6.imgcdn.dev/ZDDdt.png");
+            const background = await canvas.loadImage("https://i.imgur.com/4ZFjiC2.png");
             ctx.drawImage(background, 0, 0, frame.width, frame.height);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
@@ -334,7 +334,7 @@ class musicCard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.discordapp.com/attachments/1093111596286480475/1186503360753438720/Picsart_23-12-19_08-17-32-510.jpg`);
+            const background = await canvas.loadImage(`https://i.imgur.com/Lml4H5V.jpg`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -453,7 +453,7 @@ class musicCard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://s6.imgcdn.dev/fCFut.jpg`);
+            const background = await canvas.loadImage(`https://i.imgur.com/bWWPa8D.jpg`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -574,7 +574,7 @@ class musicCard {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://s6.imgcdn.dev/fCmqw.jpg`);
+            const background = await canvas.loadImage(`https://i.imgur.com/Yq3gbtt.jpg`);
 
             const thumbnailCanvas = canvas.createCanvas(650, 650);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
@@ -618,7 +618,7 @@ class musicCard {
 
 
 
-            const bg2 = await canvas.loadImage("https://s6.imgcdn.dev/fCera.png")
+            const bg2 = await canvas.loadImage("https://i.imgur.com/ASY5GPH.png")
 
             // Draw the background
             ctx.drawImage(background, 0, 0, 1280, 450);
