@@ -121,7 +121,7 @@ class RankCard {
 
           
             try {
-                thumbnailImage = await canvas.loadImage(this.thumbnail, {
+                thumbnailImage = await canvas.loadImage(this.avatar, {
                     requestOptions: {
                         headers: {
                             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
