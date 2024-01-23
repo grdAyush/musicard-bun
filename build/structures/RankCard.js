@@ -195,7 +195,7 @@ class RankCard {
                   value /= 1000;
                 }
               
-                let shortValue = Math.floor(value);
+                let shortValue = value;
                 
                 if (shortValue % 1 != 0) {
                   shortValue = shortValue.toFixed(1);
